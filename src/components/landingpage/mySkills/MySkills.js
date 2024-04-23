@@ -17,7 +17,7 @@ const MySkills = () => {
     })
 
     return (
-        <div className="flex flex-col items-center border-2 border-black flex-wrap px-20 py-5  ">
+        <div className="flex flex-col items-center  flex-wrap px-20 py-5  ">
             <p className=" text-[30px]">Skills</p>
             <div className="flex flex-wrap text-center justify-center ">
                 {mappedSkills}

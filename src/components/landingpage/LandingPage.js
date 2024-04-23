@@ -3,7 +3,7 @@ import MeSection from "./meSection/MeSection";
 import MySkills from "./mySkills/MySkills";
 import MyProjects from "./myProjects/MyProjects";
 
-import background from '../../assets/background.jpg'
+import background from '../../assets/background1.jpg'
 
 const LandingPage = () => {
     return (
@@ -13,7 +13,7 @@ const LandingPage = () => {
             </div>
 
 
-            <section className="flex pt-6">
+            <section className="flex p-10">
 
                 <div className="p-5">
                     <MeSection />

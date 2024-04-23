@@ -89,8 +89,17 @@ const projects = [
         ],
         image: bedrock,
         source_code_link: "https://github.com/SejuSpeaks/Bedrock",
-        link: "bedrock.onrender.com"
+        link: "https://bedrock.onrender.com"
     },
+];
+
+
+const music = [
+    {
+        name: 'Kloom',
+        cover: "",
+        url: ""
+    }
 ];
 
 export { skills, projects, experiences, nav };
