@@ -24,7 +24,6 @@ code {
 } */
 
 
-
 .audio-bar {
   -webkit-appearance: none;
   width: 100%;
@@ -53,7 +52,8 @@ code {
 }
 
 .svg-green {
-  fill: green
+  fill: green;
+  color: green;
 }
 
 .svg-purple {

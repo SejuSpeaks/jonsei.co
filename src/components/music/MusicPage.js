@@ -33,7 +33,7 @@ const MusicPage = ({ isPlaying, setIsPlaying, songPlaying, setSongPlaying }) => 
     const songs = music.map((song, index) => {
         //index + 1 because index starts at 0
         return (
-            <div onClick={() => clickedSong(song)} className="flex border-b-2 border-[#F8F8F8] hover:cursor-pointer hover:bg-[#f1f1f1]">
+            <div onClick={() => clickedSong(song)} className="flex border-b-2 border-[#F8F8F8] hover hover:bg-[#f1f1f1]">
                 <img className="h-10 w-10" src={cover} />
 
                 <div className="flex gap-2 pl-2 items-center w-full">

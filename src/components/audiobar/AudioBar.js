@@ -1,7 +1,8 @@
 import { useRef, useEffect, useState } from "react";
+import { music } from "../../info";
 import { formatTime } from "../utils/formatTime";
 
-const AudioBar = ({ audioRef, setIsPlaying, isPlaying, songPlaying }) => {
+const AudioBar = ({ setSongPlaying, audioRef, setIsPlaying, isPlaying, songPlaying }) => {
     const progressBarRef = useRef();
 
     const playSong = () => {
@@ -12,6 +13,22 @@ const AudioBar = ({ audioRef, setIsPlaying, isPlaying, songPlaying }) => {
     const pauseSong = () => {
         audioRef.current.pause();
         setIsPlaying(false);
+    }
+
+    const playNext = () => {
+        const id = songPlaying.id
+        if (id + 1 < music.length) {
+            return setSongPlaying(music[id + 1])
+        }
+        return setSongPlaying(music[0])
+    }
+
+    const playPrev = () => {
+        const id = songPlaying.id
+        if (id - 1 > 0) {
+            return setSongPlaying(music[id - 1])
+        }
+        return setSongPlaying(music[music.length - 1])
     }
 
     const drag = () => {
@@ -55,26 +72,26 @@ const AudioBar = ({ audioRef, setIsPlaying, isPlaying, songPlaying }) => {
 
             <div className="foward-back flex items-center gap-3 pr-3">
 
-                <svg className="hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path d="M4 2v20h-2v-20h2zm18 0l-16 10 16 10v-20z" /></svg>
+                <svg onClick={() => playPrev()} className="hover" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path d="M4 2v20h-2v-20h2zm18 0l-16 10 16 10v-20z" /></svg>
 
 
                 {!isPlaying && (
                     <>
-                        <svg onClick={() => playSong()} className="hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z" /></svg>
+                        <svg onClick={() => playSong()} className="hover" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z" /></svg>
                     </>
                 )}
 
 
                 {isPlaying && (<>
-                    <svg className="hover:cursor-pointer" onClick={() => pauseSong()} xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M11 22h-4v-20h4v20zm6-20h-4v20h4v-20z" /></svg>
+                    <svg className="hover" onClick={() => pauseSong()} xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M11 22h-4v-20h4v20zm6-20h-4v20h4v-20z" /></svg>
                 </>)}
 
-                <svg className="hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path d="M20 22v-20h2v20h-2zm-18 0l16-10-16-10v20z" /></svg>
+                <svg onClick={() => playNext()} className="hover" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path d="M20 22v-20h2v20h-2zm-18 0l16-10-16-10v20z" /></svg>
 
             </div>
 
             <div className="flex gap-5 w-[50%] items-center">
-                <input className="audio-bar" type="range" ref={progressBarRef} onChange={() => drag()} defaultValue={0} />
+                <input className="audio-bar hover" type="range" ref={progressBarRef} onChange={() => drag()} defaultValue={0} />
 
                 <div className="flex">
                     <p className="">{progress} </p>

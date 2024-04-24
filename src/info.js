@@ -97,31 +97,37 @@ const projects = [
 
 const music = [
     {
+        id: 0,
         name: 'Kloom',
         url: "",
         cover: cover
     },
     {
+        id: 1,
         name: 'Tezeta',
         url: "https://d137d42ac0f4ae-songs.s3.amazonaws.com/2666986c83fc43248bf85700af06735f.mp3",
         cover: cover
     },
     {
-        name: 'Goose egg',
-        url: "",
+        id: 2,
+        name: 'JustFriends',
+        url: "https://d137d42ac0f4ae-songs.s3.amazonaws.com/21022054219645e3b7965575d5a56576.mp3",
         cover: cover
     },
     {
+        id: 3,
         name: 'everybody',
         url: "https://d137d42ac0f4ae-songs.s3.amazonaws.com/netcat+-+-etc+-+12+everybody.wav",
         cover: cover
     },
     {
+        id: 4,
         name: 'imanIsMe',
         url: "",
         cover: cover
     },
     {
+        id: 5,
         name: 'eissa',
         url: "",
         cover: cover

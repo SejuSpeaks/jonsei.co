@@ -29,7 +29,7 @@ const NavBar = () => {
     const navItems = Object.values(nav).map((el, index) => {
 
         return (
-            <div onClick={() => clickNav(el)} key={index} className={` flex items-center hover:shadow-lg hover:cursor-pointer  rounded-md ${el.class ? "svg" : ""}`}>
+            <div onClick={() => clickNav(el)} key={index} className={` flex items-center hover:shadow-sm hover rounded-md ${el.class ? "svg" : ""}`}>
                 <p className={`text-[20px] px-6 py-1 hover:text-[${colors[colorIndex]}] ${el.class ? `svg-${colors[colorIndex]}` : ""}`} >{el.title}</p>
             </div>
         )
