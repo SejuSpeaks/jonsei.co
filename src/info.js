@@ -1,5 +1,6 @@
 import bedrock from './assets/bedrock.png';
 import hater from './assets/hater.png';
+import cover from './assets/song_covers/cover.jpg';
 
 const nav = [
     { title: "blog" },
@@ -97,9 +98,34 @@ const projects = [
 const music = [
     {
         name: 'Kloom',
-        cover: "",
-        url: ""
-    }
+        url: "",
+        cover: cover
+    },
+    {
+        name: 'Tezeta',
+        url: "https://d137d42ac0f4ae-songs.s3.amazonaws.com/2666986c83fc43248bf85700af06735f.mp3",
+        cover: cover
+    },
+    {
+        name: 'Goose egg',
+        url: "",
+        cover: cover
+    },
+    {
+        name: 'everybody',
+        url: "https://d137d42ac0f4ae-songs.s3.amazonaws.com/netcat+-+-etc+-+12+everybody.wav",
+        cover: cover
+    },
+    {
+        name: 'imanIsMe',
+        url: "",
+        cover: cover
+    },
+    {
+        name: 'eissa',
+        url: "",
+        cover: cover
+    },
 ];
 
-export { skills, projects, experiences, nav };
+export { skills, projects, experiences, nav, music };

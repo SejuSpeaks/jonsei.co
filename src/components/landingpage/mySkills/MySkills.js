@@ -8,7 +8,6 @@ const MySkills = () => {
     const mappedSkills = skills.map((skill, index) => {
         const randomIndex = Math.floor(Math.random() * colors.length)
         const randomColor = colors[randomIndex]
-        console.log(randomColor)
         const hoverColorClass = `hover:text-[${randomColor}]`;
 
         return (

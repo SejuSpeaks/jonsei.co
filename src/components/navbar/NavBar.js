@@ -19,7 +19,6 @@ const NavBar = () => {
     }
 
     useEffect(() => {
-        console.log(colorIndex)
         const intervalId = setInterval(() => {
             setColorIndex((prev) => (prev + 1) % colors.length)
         }, intervalDuration)
