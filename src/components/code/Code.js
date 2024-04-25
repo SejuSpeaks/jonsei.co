@@ -6,7 +6,7 @@ const Code = () => {
     const allProjects = projects.map(proj => {
         return (
             <div className="flex justofy-center flex-col items-center ">
-                <a target="_blank" href={proj.link}>
+                <a rel="noreferrer" target="_blank" href={proj.link}>
 
 
                     <div className="border-[1px] border-black">

@@ -5,7 +5,7 @@ const MyProjects = () => {
 
     const mappedProjects = projects.map(proj => {
         return (
-            <a target="_blank" href={proj.link} className="">
+            <a rel="noreferrer" target="_blank" href={proj.link} className="">
                 <div className=" border-2 h-full  p-5 hover " >
                     <div className="  ">
                         <img className="" src={proj.image} />
