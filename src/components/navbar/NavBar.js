@@ -4,7 +4,18 @@ import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
     const [colorIndex, setColorIndex] = useState(0);
-    const colors = ['green', 'purple', 'violet', 'blue']
+    const colors = [
+        "gray",        // Gray
+        "navy-blue",   // Navy Blue
+        "peach",       // Peach
+        "mint-green",  // Mint Green
+        "coral",       // Coral
+        "pale-yellow", // Pale Yellow
+        "beige",       // Beige
+        "lavender"     // Lavender
+    ];
+
+
     const intervalDuration = 900;
 
     const navigate = useNavigate()
@@ -36,7 +47,7 @@ const NavBar = () => {
     })
 
     return (
-        <div className="flex justify-center border-2 pt-5 w-screen ">
+        <div className="flex bg-white justify-center  pt-5 w-screen ">
             {navItems}
         </div>
     )

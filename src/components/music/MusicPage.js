@@ -2,6 +2,7 @@ import NavBar from "../navbar/NavBar";
 import { music } from "../../info";
 import musicbackground from '../../assets/musicbackground.jpg'
 import cover from '../../assets/song_covers/cover.jpg'
+import WebAmp from "../webamp/Webamp";
 
 const MusicPage = ({ isPlaying, setIsPlaying, songPlaying, setSongPlaying }) => {
 
@@ -63,13 +64,13 @@ const MusicPage = ({ isPlaying, setIsPlaying, songPlaying, setSongPlaying }) => 
         <div>
             <NavBar />
             <div className="bg-no-repeat h-[100vh]" style={{ backgroundImage: `url(${musicbackground})` }} >
-                <div className=" flex justify-center items-center text-center w-full">
+                <div className=" py-5 flex justify-center items-center text-center w-full">
                     <p className="w-80 text-[11px]">
-                        The best way i know to express myself to date is music. It stays close to my heart and adds a soundtrack to this caotic life,
                         this is some selected songs
                         i enjoy and some that ive made, enjoy the site with some music please
                     </p>
                 </div>
+
                 <div >
                     {songs}
                 </div>

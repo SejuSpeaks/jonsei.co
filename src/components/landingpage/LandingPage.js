@@ -4,10 +4,11 @@ import MySkills from "./mySkills/MySkills";
 import MyProjects from "./myProjects/MyProjects";
 
 import background from '../../assets/background1.jpg'
+import musicbackground from '../../assets/musicbackground.jpg'
 
 const LandingPage = () => {
     return (
-        <div className="bg-no-repeat" style={{ backgroundImage: `url(${background})` }}>
+        <div className="bg-no-repeat bg-[white]"  >
             <div className="sticky top-0 bg-[white]">
                 <NavBar />
             </div>

@@ -98,20 +98,20 @@ const projects = [
 const music = [
     {
         id: 0,
-        name: 'Kloom',
-        url: "",
+        name: 'missinu',
+        url: "https://d137d42ac0f4ae-songs.s3.amazonaws.com/missin+u.mp3",
         cover: cover
     },
     {
         id: 1,
-        name: 'Tezeta',
-        url: "https://d137d42ac0f4ae-songs.s3.amazonaws.com/2666986c83fc43248bf85700af06735f.mp3",
+        name: 'doitforthehate',
+        url: "https://d137d42ac0f4ae-songs.s3.amazonaws.com/doitforthehatee+(1).wav",
         cover: cover
     },
     {
         id: 2,
-        name: 'JustFriends',
-        url: "https://d137d42ac0f4ae-songs.s3.amazonaws.com/21022054219645e3b7965575d5a56576.mp3",
+        name: 'Real',
+        url: "https://d137d42ac0f4ae-songs.s3.amazonaws.com/Real3.mp3",
         cover: cover
     },
     {
@@ -122,16 +122,48 @@ const music = [
     },
     {
         id: 4,
-        name: 'imanIsMe',
-        url: "",
+        name: 'tearsawai',
+        url: "https://d137d42ac0f4ae-songs.s3.amazonaws.com/tearsawai_.mp3",
         cover: cover
     },
     {
         id: 5,
-        name: 'eissa',
-        url: "",
+        name: 'meinme',
+        url: "https://d137d42ac0f4ae-songs.s3.amazonaws.com/swe.wav",
         cover: cover
     },
 ];
 
-export { skills, projects, experiences, nav, music };
+const pictures = [
+    {
+        caption: "something i took while out on a walk took me and mesmerized me",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2tPeXQI-gUCd9gFhXPCulWh5v19bVMtbEiNKecLXNsw&s"
+    },
+    {
+        caption: "jow can i be ho my b is g ",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2tPeXQI-gUCd9gFhXPCulWh5v19bVMtbEiNKecLXNsw&s"
+    },
+    {
+        caption: "vv",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2tPeXQI-gUCd9gFhXPCulWh5v19bVMtbEiNKecLXNsw&s"
+    },
+    {
+        caption: "on my",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2tPeXQI-gUCd9gFhXPCulWh5v19bVMtbEiNKecLXNsw&s"
+    },
+    {
+        caption: "lets go ",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2tPeXQI-gUCd9gFhXPCulWh5v19bVMtbEiNKecLXNsw&s"
+    },
+    {
+        caption: "who me",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2tPeXQI-gUCd9gFhXPCulWh5v19bVMtbEiNKecLXNsw&s"
+    },
+    {
+        caption: "yeah you",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2tPeXQI-gUCd9gFhXPCulWh5v19bVMtbEiNKecLXNsw&s"
+    },
+
+]
+
+export { skills, projects, experiences, nav, music, pictures };

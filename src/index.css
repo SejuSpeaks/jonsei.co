@@ -23,6 +23,12 @@ code {
     monospace;
 } */
 
+body {
+  background-color: #e5e5f734;
+  opacity: 0.8;
+  background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-size: 10px 10px;
+}
 
 .audio-bar {
   -webkit-appearance: none;
@@ -51,19 +57,52 @@ code {
   padding-right: 40px;
 }
 
-.svg-green {
-  fill: green;
-  color: green;
+.svg-white {
+  fill: #FFFFFF;
+  /* White */
 }
 
-.svg-purple {
-  fill: purple
+.svg-silver {
+  fill: #C0C0C0;
+  /* Silver */
 }
 
-.svg-violet {
-  fill: violet
+.svg-gray {
+  fill: #808080;
+  /* Gray */
 }
 
-.svg-blue {
-  fill: blue
+.svg-navy-blue {
+  fill: #000080;
+  /* Navy Blue */
+}
+
+.svg-peach {
+  fill: #FFDAB9;
+  /* Peach */
+}
+
+.svg-mint-green {
+  fill: #98FF98;
+  /* Mint Green */
+}
+
+.svg-coral {
+  fill: #FF7F50;
+  /* Coral */
+}
+
+.svg-pale-yellow {
+  fill: #FFFFE0;
+  /* Pale Yellow */
+}
+
+.svg-beige {
+  fill: #F5F5DC;
+  /* Beige */
+}
+
+.svg-lavender {
+  fill: #E6E6FA;
+  /* Lavender */
 }

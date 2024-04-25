@@ -25,7 +25,7 @@ const AudioBar = ({ setSongPlaying, audioRef, setIsPlaying, isPlaying, songPlayi
 
     const playPrev = () => {
         const id = songPlaying.id
-        if (id - 1 > 0) {
+        if (id - 1 >= 0) {
             return setSongPlaying(music[id - 1])
         }
         return setSongPlaying(music[music.length - 1])

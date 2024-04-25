@@ -2,13 +2,13 @@ import image from '../../../assets/me.png'
 
 const MeSection = () => {
     return (
-        <div className="flex flex-col justify-center items-center  p-10 h-full ">
+        <div className="flex flex-col justify-center items-center  p-10  ">
 
             <div className="flex items-center  justify-center">
 
                 <img className='w-[80px] ' src={image} />
 
-                <p className='text-[21px] pl-3 '>Jael Bueno <span className='whitespace-nowrap text-[green]' > Software Engineer</span></p>
+                <p className='text-[21px] pl-3 '>Jael Bueno <span className='whitespace-nowrap text-[#79ace5]' > Software Engineer</span></p>
             </div>
 
             <div className="w-80 pt-5 text-left">

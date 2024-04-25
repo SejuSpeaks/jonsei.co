@@ -11,7 +11,7 @@ const MySkills = () => {
         const hoverColorClass = `hover:text-[${randomColor}]`;
 
         return (
-            <p key={index} className={`text-lg p-1 hover:text-[violet] hover `}>{` | ${skill.title} |  `}</p>
+            <p key={index} className={`text-lg p-1 hover:text-[#000080] hover `}>{` | ${skill.title} |  `}</p>
         )
     })
 
