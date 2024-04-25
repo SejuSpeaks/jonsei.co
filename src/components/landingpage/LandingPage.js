@@ -8,13 +8,13 @@ import musicbackground from '../../assets/musicbackground.jpg'
 
 const LandingPage = () => {
     return (
-        <div className="bg-no-repeat bg-[white]"  >
+        <div className="bg-no-repeat bg-[white] "  >
             <div className="sticky top-0 bg-[white]">
                 <NavBar />
             </div>
 
 
-            <section className="flex p-10">
+            <section className="flex p-10 sm:flex-col md:flex-col">
 
                 <div className="p-5">
                     <MeSection />

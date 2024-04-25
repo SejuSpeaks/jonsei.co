@@ -67,10 +67,10 @@ const AudioBar = ({ setSongPlaying, audioRef, setIsPlaying, isPlaying, songPlayi
     const [duration, setDuration] = useState(formatTime(0));
 
     return (
-        <div className=" border-[1px] border-[black] p-2 flex w-full justify-between items-center bg-[#F2F2F2]">
+        <div className=" border-[1px] border-[black] p-2 flex w-full justify-between items-center bg-[#F2F2F2] sm:gap-10">
             <audio ref={audioRef} src={songPlaying.url} onLoadedMetadata={onLoadedMetadata} />
 
-            <div className="foward-back flex items-center gap-3 pr-3">
+            <div className="foward-back flex items-center gap-3 pr-3 ">
 
                 <svg onClick={() => playPrev()} className="hover" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path d="M4 2v20h-2v-20h2zm18 0l-16 10 16 10v-20z" /></svg>
 
@@ -90,8 +90,8 @@ const AudioBar = ({ setSongPlaying, audioRef, setIsPlaying, isPlaying, songPlayi
 
             </div>
 
-            <div className="flex gap-5 w-[50%] items-center">
-                <input className="audio-bar hover" type="range" ref={progressBarRef} onChange={() => drag()} defaultValue={0} />
+            <div className="flex gap-5 w-[50%] items-center ">
+                <input className="audio-bar hover sm:hidden" type="range" ref={progressBarRef} onChange={() => drag()} defaultValue={0} />
 
                 <div className="flex">
                     <p className="">{progress} </p>
@@ -103,7 +103,7 @@ const AudioBar = ({ setSongPlaying, audioRef, setIsPlaying, isPlaying, songPlayi
 
 
             <div className="flex items-center gap-1 pr-10 w-[200px]">
-                <img className="h-7 w-7" src={songPlaying.cover} />
+                <img className="h-7 w-7 sm:h-" src={songPlaying.cover} />
                 <p>{songPlaying.name}</p>
             </div>
 

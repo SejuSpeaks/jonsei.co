@@ -27,7 +27,7 @@ const MyProjects = () => {
                 <p className=" text-[30px]">Projects</p>
             </div>
 
-            <div className="flex gap-5">
+            <div className="flex gap-5 sm:flex sm:flex-col">
                 {mappedProjects}
             </div>
         </div>
