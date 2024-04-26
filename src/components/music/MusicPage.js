@@ -2,7 +2,6 @@ import NavBar from "../navbar/NavBar";
 import { music } from "../../info";
 import musicbackground from '../../assets/musicbackground.jpg'
 import cover from '../../assets/song_covers/cover.jpg'
-import WebAmp from "../webamp/Webamp";
 
 const MusicPage = ({ isPlaying, setIsPlaying, songPlaying, setSongPlaying }) => {
 
@@ -35,7 +34,7 @@ const MusicPage = ({ isPlaying, setIsPlaying, songPlaying, setSongPlaying }) => 
         //index + 1 because index starts at 0
         return (
             <div key={index} onClick={() => clickedSong(song)} className="flex border-b-2 border-[#F8F8F8] hover hover:bg-[#f1f1f1]">
-                <img className="h-10 w-10" src={cover} />
+                <img alt="cover" className="h-10 w-10" src={cover} />
 
                 <div className="flex gap-2 pl-2 items-center w-full">
                     <p className="text-[lightgrey]">{index + 1}</p>

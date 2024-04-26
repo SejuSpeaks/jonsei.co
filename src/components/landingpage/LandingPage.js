@@ -3,8 +3,7 @@ import MeSection from "./meSection/MeSection";
 import MySkills from "./mySkills/MySkills";
 import MyProjects from "./myProjects/MyProjects";
 
-import background from '../../assets/background1.jpg'
-import musicbackground from '../../assets/musicbackground.jpg'
+
 
 const LandingPage = () => {
     return (

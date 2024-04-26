@@ -3,14 +3,14 @@ import NavBar from "../navbar/NavBar";
 
 const Code = () => {
 
-    const allProjects = projects.map(proj => {
+    const allProjects = projects.map((proj, index) => {
         return (
-            <div className="flex justofy-center flex-col items-center ">
+            <div key={index} className="flex justofy-center flex-col items-center ">
                 <a rel="noreferrer" target="_blank" href={proj.link}>
 
 
                     <div className="border-[1px] border-black">
-                        <img className="w-fill max-w-[420px] max-h-[200px] " src={proj.image} />
+                        <img alt="project preview" className="w-fill max-w-[420px] max-h-[200px] " src={proj.image} />
                     </div>
 
                     <p className="font-semibold">{proj.name}</p>

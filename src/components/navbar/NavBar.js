@@ -35,7 +35,7 @@ const NavBar = () => {
         }, intervalDuration)
 
         return () => clearInterval(intervalId)
-    }, [])
+    },)
 
     const navItems = Object.values(nav).map((el, index) => {
 

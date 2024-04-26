@@ -7,7 +7,7 @@ const Pictures = () => {
     const allPictures = pictures.map(pic => {
         return (
             <div className=" relative">
-                <img className="h-max-[400px]" src={pic.image} />
+                <img alt="photograph i took" className="h-max-[400px]" src={pic.image} />
                 <p>{pic.caption}</p>
             </div>
         );

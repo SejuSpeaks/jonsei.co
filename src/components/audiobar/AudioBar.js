@@ -50,16 +50,17 @@ const AudioBar = ({ setSongPlaying, audioRef, setIsPlaying, isPlaying, songPlayi
 
     useEffect(() => {
         if (isPlaying && audioRef.current.paused) {
-            const playPromise = audioRef.current.play();
+            audioRef.current.play();
         }
-    }, [songPlaying])
+    }, [songPlaying, isPlaying, audioRef])
 
     useEffect(() => {
-        audioRef.current.addEventListener("timeupdate", updateTime);
+        const audioReference = audioRef.current;
+        audioReference.addEventListener("timeupdate", updateTime);
         return () => {
-            audioRef.current.removeEventListener("timeupdate", updateTime);
+            audioReference.removeEventListener("timeupdate", updateTime);
         };
-    }, []);
+    },);
 
 
 
@@ -103,7 +104,7 @@ const AudioBar = ({ setSongPlaying, audioRef, setIsPlaying, isPlaying, songPlayi
 
 
             <div className="flex items-center gap-1 pr-10 w-[200px]">
-                <img className="h-7 w-7 sm:h-" src={songPlaying.cover} />
+                <img className="h-7 w-7 sm:h-" alt="cover" src={songPlaying.cover} />
                 <p>{songPlaying.name}</p>
             </div>
 

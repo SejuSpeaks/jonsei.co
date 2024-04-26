@@ -2,13 +2,7 @@ import { skills } from "../../../info";
 
 const MySkills = () => {
 
-    const colors = ['green', 'purple', 'violet', 'blue']
-
-
     const mappedSkills = skills.map((skill, index) => {
-        const randomIndex = Math.floor(Math.random() * colors.length)
-        const randomColor = colors[randomIndex]
-        const hoverColorClass = `hover:text-[${randomColor}]`;
 
         return (
             <p key={index} className={`text-lg p-1 hover:text-[#000080] hover `}>{` | ${skill.title} |  `}</p>

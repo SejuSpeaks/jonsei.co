@@ -6,7 +6,7 @@ const MeSection = () => {
 
             <div className="flex items-center  justify-center">
 
-                <img className='w-[80px] ' src={image} />
+                <img className='w-[80px] ' alt='me' src={image} />
 
                 <p className='text-[21px] pl-3 '>Jael Bueno <span className='whitespace-nowrap text-[#79ace5]' > Software Engineer</span></p>
             </div>
